@@ -1,0 +1,13 @@
+.stats-section {
+    background: var(--bg-color);
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+.stat-box {
+    padding: 20px;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 2px;
+}

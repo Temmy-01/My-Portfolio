@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Premium Royal Night Palette */
+  --bg-deep: #030712;
+  /* Very deep navy, almost black */
+  --bg-surface: #0b1121;
+  /* Deep slate blue */
+  --bg-card: #151e32;
+  /* Lighter slate for cards */
+  --accent-blue: #38bdf8;
+  /* Cyan/Sky blue for pop */
+  --accent-purple: #818cf8;
+  /* Soft indigo */
+  --text-primary: #f8fafc;
+  /* White-ish slate */
+  --text-secondary: #cbd5e1;
+  /* Light slate */
+  --text-muted: #64748b;
+  /* Muted slate */
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+
+  --gradient-primary: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 50% 0%, #172a45 0%, var(--bg-deep) 70%);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-blue);
+  border-radius: 10px;
+}
+
+/* Global Utilities */
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-premium {
+  padding: 14px 34px;
+  border-radius: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: var(--gradient-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-premium:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.3);
+}
+
+.btn-outline-premium {
+  padding: 13px 33px;
+  border-radius: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: #fff;
+}
+
+.btn-outline-premium:hover {
+  background: var(--glass);
+  border-color: var(--accent-blue);
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: var(--accent-blue);
+}
+
+.section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.reveal-text {
+  overflow: hidden;
+}
+
+.reveal-text span {
+  display: block;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}

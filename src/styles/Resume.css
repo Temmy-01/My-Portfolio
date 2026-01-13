@@ -1,0 +1,64 @@
+.tech-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(0, 229, 255, 0.1);
+    color: var(--accent-blue);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.column-title {
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.edu-card {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-purple);
+}
+
+.edu-card .year {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.edu-card h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cert-list {
+    list-style: none;
+}
+
+.cert-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.check-icon {
+    color: var(--accent-blue);
+    margin-right: 12px;
+    font-weight: 900;
+}
